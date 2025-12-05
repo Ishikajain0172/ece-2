@@ -1,0 +1,17 @@
+.container {
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid white;
+} .box {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+.box1 {background-color: #54aef8;}
+.box2 {background-color: #d4ee40;}
+.box3 {background-color: #f238a1;}
+.box4 {background-color: #c63ddf;}
+.box5 {background-color: #3fd9ca;}
