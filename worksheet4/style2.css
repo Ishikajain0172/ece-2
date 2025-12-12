@@ -1,0 +1,20 @@
+.flex-container {
+  display: flex;              /* Step 1 */
+  justify-content: center;    /* Step 2 */
+  align-items: center;        /* Step 3 */
+  gap: 10px;                  /* Step 5 */
+  height: 200px;
+  background: #f2f2f2;
+  border: 2px solid #ccc;
+
+  /* Step 4 (you can change this to column) */
+  flex-direction: row;
+}
+
+.box {
+  background: #4a90e2;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 5px;
+}
