@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <!-- Link CSS file -->
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">YourName</div>
+      <nav class="main-nav">
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1 class="hero-title">Hi, I'm <span class="accent">Your Name</span></h1>
+        <p class="hero-sub">I build clean, accessible, and responsive websites — front-end focused.</p>
+        <a class="cta" href="#projects">View Projects</a>
+      </div>
+    </section>
+
+    <section id="skills" class="skills container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-list">
+        <div class="skill">HTML &amp; Semantics</div>
+        <div class="skill">CSS (Flexbox & Grid)</div>
+        <div class="skill">JavaScript (ES6+)</div>
+        <div class="skill">Responsive Design</div>
+        <div class="skill">Version Control (Git)</div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-image" aria-hidden="true">IMG</div>
+          <h3>Project One</h3>
+          <p>Simple landing page using semantic HTML and modern CSS layout techniques.</p>
+          <a class="project-link" href="#">Demo</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image" aria-hidden="true">IMG</div>
+          <h3>Project Two</h3>
+          <p>Interactive JavaScript app with local storage and micro animations.</p>
+          <a class="project-link" href="#">Demo</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image" aria-hidden="true">IMG</div>
+          <h3>Project Three</h3>
+          <p>Responsive portfolio site built with CSS Grid and accessible markup.</p>
+          <a class="project-link" href="#">Demo</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image" aria-hidden="true">IMG</div>
+          <h3>Project Four</h3>
+          <p>Small React component library (demo & docs pages).</p>
+          <a class="project-link" href="#">Demo</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2 class="section-title">Contact</h2>
+      <p>If you'd like to get in touch: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p class="small">Or find me on <a href="#">GitHub</a> • <a href="#">LinkedIn</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Your Name — Built with ❤️</p>
+      <p class="small">Phone: +91 12345 67890 • Email: youremail@example.com</p>
+    </div>
+  </footer>
+
+  <script>
+    // small script to set current year and toggle mobile menu
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const btn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
