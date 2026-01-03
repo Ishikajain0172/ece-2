@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .flex-container {
   display: flex;              /* Step 1 */
   justify-content: center;    /* Step 2 */
@@ -17,4 +18,25 @@
   padding: 20px;
   font-size: 20px;
   border-radius: 5px;
+=======
+.flex-container {
+  display: flex;              /* Step 1 */
+  justify-content: center;    /* Step 2 */
+  align-items: center;        /* Step 3 */
+  gap: 10px;                  /* Step 5 */
+  height: 200px;
+  background: #f2f2f2;
+  border: 2px solid #ccc;
+
+  /* Step 4 (you can change this to column) */
+  flex-direction: row;
+}
+
+.box {
+  background: #4a90e2;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 5px;
+>>>>>>> 7615c31a0ba0ed31c5a49d1bc2588da14db81cf8
 }
