@@ -1,0 +1,47 @@
+/* NAVBAR BASE STYLING */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 15px 20px;
+  color: white;
+}
+
+/* MENU LINKS */
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: 600;
+}
+
+.menu a:hover {
+  background: #444;
+  border-radius: 5px;
+}
+
+/* MENU LAYOUT — HORIZONTAL ON DESKTOP */
+.menu {
+  display: flex;
+  gap: 10px;
+}
+
+/* RESPONSIVE: STACK vertically under 600px */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;         /* logo above, links below */
+    gap: 10px;
+  }
+
+  .menu {
+    flex-direction: column;         /* vertical links */
+    width: 100%;
+    align-items: center; 
+  }
+
+  .menu a {
+    width: 100%;
+    text-align: center;
+  }
+}
